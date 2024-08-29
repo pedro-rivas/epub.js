@@ -3,7 +3,7 @@ var path = require("path");
 var PROD = (process.env.NODE_ENV === "production")
 var LEGACY = (process.env.LEGACY)
 var MINIMIZE = (process.env.MINIMIZE === "true")
-var hostname = "localhost";
+var hostname = "0.0.0.0";
 var port = 8080;
 
 var filename = "[name]";

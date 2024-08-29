@@ -1,5 +1,7 @@
 # Epub.js v0.3
 
+export NODE_OPTIONS=--openssl-legacy-provider
+
 ![FuturePress Views](http://fchasen.com/futurepress/fp.png)
 
 Epub.js is a JavaScript library for rendering ePub documents in the browser, across many devices.
