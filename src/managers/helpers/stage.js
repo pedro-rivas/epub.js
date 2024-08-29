@@ -48,8 +48,7 @@ class Stage {
 		container.style.verticalAlign = "top";
 		container.style.position = "relative";
 		container.style.overflowAnchor = "none";
-
-		console.log('UPDATED')
+	
 
 		if(axis === "horizontal") {
 			// container.style.whiteSpace = "nowrap";
