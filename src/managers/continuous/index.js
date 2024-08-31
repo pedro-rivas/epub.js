@@ -184,7 +184,7 @@ class ContinuousViewManager extends DefaultViewManager {
 		}
 	}
 
-	update(_offset){
+	update(_offset){ console.log("update");
 		var container = this.bounds();
 		var views = this.views.all();
 		var viewsLength = views.length;
@@ -216,13 +216,13 @@ class ContinuousViewManager extends DefaultViewManager {
 				}
 				visible.push(view);
 			} else {
-				this.q.enqueue(view.destroy.bind(view));
-				// console.log("hidden " + view.index, view.displayed);
+				// this.q.enqueue(view.destroy.bind(view));
+				// // console.log("hidden " + view.index, view.displayed);
 
-				clearTimeout(this.trimTimeout);
-				this.trimTimeout = setTimeout(function(){
-					this.q.enqueue(this.trim.bind(this));
-				}.bind(this), 250);
+				// clearTimeout(this.trimTimeout);
+				// this.trimTimeout = setTimeout(function(){
+				// 	this.q.enqueue(this.trim.bind(this));
+				// }.bind(this), 250);
 			}
 
 		}
