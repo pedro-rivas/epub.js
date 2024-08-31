@@ -153,7 +153,7 @@ class ContinuousViewManager extends DefaultViewManager {
 		return view;
 	}
 
-	prepend(section){
+	prepend(section){ 
 		var view = this.createView(section);
 
 		view.on(EVENTS.VIEWS.RESIZED, (bounds) => {
@@ -349,11 +349,11 @@ class ContinuousViewManager extends DefaultViewManager {
 
 		// Erase all but last above
 		for (var i = 0; i < above.length-1; i++) {
-			this.erase(above[i], above);
+			//this.erase(above[i], above);
 		}
 
-		// Erase all except first below
-		for (var j = 1; j < below.length; j++) {
+		// Erase last view
+		for (var j = 4; j < below.length; j++) {
 			this.erase(below[j]);
 		}
 
